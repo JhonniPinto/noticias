@@ -1,0 +1,20 @@
+<% include partials/header %>
+
+<div class="text-center d-flex justify-content-center mt-5">
+    <div class="col-sm-6">
+        <form class="form-signin" method="POST">
+            <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72"
+                height="72">
+            <h1 class="h3 mb-3 font-weight-normal">Por favor, identifique-se.</h1>
+            <input name="username" type="text" id="inUser" class="form-control" placeholder="Usuário" required autofocus>
+            <input name="password" type="password" id="inPassword" class="form-control my-3" placeholder="Senha" required>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+            <br>
+        </form>
+        <a href="/facebook" style="text-decoration: none"><button class="btn btn-lg btn-info btn-block mb-2">Entrar com Facebook</button></a>
+        <a href="/google" style="text-decoration: none"><button class="btn btn-lg btn-info btn-block mb-4">Entrar com Google</button></a>
+        <p class="text-muted">&copy; 2019</p>
+    </div>
+</div>
+
+<% include partials/footer %>

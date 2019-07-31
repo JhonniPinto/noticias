@@ -1,0 +1,14 @@
+<% include ../partials/header %>
+
+<div class="starter-template">
+  <h1>Notícias Públicas</h1>
+  <% noticias.forEach(noticia => { %>
+  <div class="media my-5">
+    <div class="media-body">
+      <h4 class="mt-0"><%- noticia.title %></h4>
+      <p><%- noticia.content %></p>
+    </div>
+  </div>
+  <% }) %>
+
+  <% include ../partials/footer %>
